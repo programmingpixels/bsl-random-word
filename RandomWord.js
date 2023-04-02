@@ -7,6 +7,7 @@ window.setRandomWord = function setRandomWord() {
     setWordText(randomWord);
     setVideo(randomWord);
     setLinkUrl(randomWord);
+    //setFingerSpell(randomWord);
 }
 
 
