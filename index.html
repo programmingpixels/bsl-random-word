@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Word Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type="module" src="RandomWord.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-flex is-centered">
+                <div class="column is-full-mobile">
+                    <button class="button is-normal is-primary" onclick="setRandomWord()">Randomise</button>
+                </div>
+            </div>
+            <div class="columns is-flex is-centered">
+                <div class="column is-full-mobile">
+                    <h2 id="word"></h2>
+                </div>
+            </div>
+
+            <div class="columns is-flex is-centered">
+                <div id="embed" class="column is-full-mobile">
+                    <video id="primary_video" class="is-hidden" type="video/mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="columns is-flex is-centered">
+                <div id="embed" class="column is-full-mobile">
+                    <h2 id="secondary_word"></h2>
+                    <video id="secondary_video" class="is-hidden" type="video/mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="columns is-flex is-centered">
+                <div class="column is-full-mobile">
+                    <a id="link" target="_blank">Click here for more videos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
