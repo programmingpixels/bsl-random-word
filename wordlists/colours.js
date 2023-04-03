@@ -1,13 +1,15 @@
-Colours
-Red
-Yellow
-Blue
-Black
-Green
-White
-Pink
-Brown
-Purple
-Grey
-Gold
-Silver
+export const colours = [
+    "Colours",
+    "Red",
+    "Yellow",
+    "Blue",
+    "Black",
+    "Green",
+    "White",
+    "Pink",
+    "Brown",
+    "Purple",
+    "Grey",
+    "Gold",
+    "Silver",
+]

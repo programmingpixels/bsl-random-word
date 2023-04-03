@@ -1,8 +1,28 @@
 import { animals } from "./wordlists/animals.js";
+import { basics } from "./wordlists/basics.js";
+import { basics2 } from "./wordlists/basics2.js";
+import { colours } from "./wordlists/colours.js";
+import { community } from "./wordlists/community.js";
+import { days } from "./wordlists/days.js";
+import { numbers } from "./wordlists/numbers.js";
+import { timeScales } from "./wordlists/time scales.js";
+import { transport } from "./wordlists/transport.js";
+
+const masterList = [
+    ...animals,
+    ...basics,
+    ...basics2,
+    ...colours,
+    ...community,
+    ...days,
+    ...numbers,
+    ...timeScales,
+    ...transport,
+]
 
 //https://stackoverflow.com/questions/49338193/how-to-use-code-from-script-with-type-module
 window.setRandomWord = function setRandomWord() {
-    var randomWord = animals[Math.floor(Math.random() * animals.length)];
+    var randomWord = masterList[Math.floor(Math.random() * masterList.length)];
 
     setWordText(randomWord);
     setVideo(randomWord);
