@@ -1,23 +1,49 @@
 import { animals } from "./wordlists/animals.js";
 import { basics } from "./wordlists/basics.js";
 import { basics2 } from "./wordlists/basics2.js";
+import { cakes } from "./wordlists/cakes.js"
+import { christmas } from "./wordlists/christmas.js"
+import { clothing } from "./wordlists/clothing.js"
 import { colours } from "./wordlists/colours.js";
 import { community } from "./wordlists/community.js";
 import { days } from "./wordlists/days.js";
+import { drinks } from "./wordlists/drinks.js";
+import { family } from "./wordlists/family.js";
+import { food } from "./wordlists/food.js";
+import { fruit } from "./wordlists/fruit.js";
+import { illness } from "./wordlists/illness.js";
+import { months } from "./wordlists/months.js";
 import { numbers } from "./wordlists/numbers.js";
+import { places } from "./wordlists/places.js";
+import { timeClock } from "./wordlists/time clock.js";
 import { timeScales } from "./wordlists/time scales.js";
 import { transport } from "./wordlists/transport.js";
+import { vegetables } from "./wordlists/vegetables.js";
+import { weather } from "./wordlists/weather.js";
 
 const masterList = [
     ...animals,
     ...basics,
     ...basics2,
+    ...cakes,
+    ...christmas,
+    ...clothing,
     ...colours,
     ...community,
     ...days,
+    ...drinks,
+    ...family,
+    ...food,
+    ...fruit,
+    ...illness,
+    ...months,
     ...numbers,
+    ...places,
+    ...timeClock,
     ...timeScales,
     ...transport,
+    ...vegetables,
+    ...weather,
 ]
 
 //https://stackoverflow.com/questions/49338193/how-to-use-code-from-script-with-type-module

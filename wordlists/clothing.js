@@ -1,0 +1,16 @@
+export const clothing = [
+    "Clothes",
+    "Coat",
+    "Dress",
+    "Jeans",
+    "Trousers",
+    "Jumper",
+    "T-shirt",
+    "Shorts",
+    "Socks",
+    "Shoes",
+    "Boots",
+    "Hat",
+    "Scarf",
+    "Gloves",
+]
