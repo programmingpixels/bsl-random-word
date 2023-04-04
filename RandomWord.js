@@ -24,6 +24,8 @@ const masterList = [
 window.setRandomWord = function setRandomWord() {
     var randomWord = masterList[Math.floor(Math.random() * masterList.length)];
 
+    setWordCount(masterList.length);
+
     setWordText(randomWord);
     setVideo(randomWord);
     setLinkUrl(randomWord);
@@ -73,4 +75,10 @@ function setVideo(word) {
 function setLinkUrl(word) {
     const linkEle = document.getElementById("link");
     linkEle.href = `https://www.signbsl.com/sign/${word}`
+}
+
+function setWordCount(count) {
+    // displays the random word
+    const countEle = document.getElementById("count");
+    countEle.textContent = count;
 }
