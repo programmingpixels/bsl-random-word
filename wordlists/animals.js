@@ -19,7 +19,7 @@ export const animals = [
     "Elephant",
     "Crocodile",
     "Lion",
-    "Pengin",
+    "Penguin",
     "Tiger",
     "Bear",
     "Hippo",
