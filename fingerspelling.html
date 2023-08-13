@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BSL helpers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type="module" src="Fingerspelling.js"></script>
+</head>
+
+
+<section>
+    <div class="container">
+        <div id="begin" class="columns is-flex is-centered">
+            <div class="column is-full has-text-centered">
+                <button class="button is-primary is-size-1 is-fullwidth" onclick="main()">Begin/ Start over</button>
+            </div>
+        </div>
+
+        <div id="gameControls" style="display:none;">
+            <div class="columns">
+                <button class="column button is-primary is-size-3 is-fullwidth"
+                    onclick="fingerspellWord()">Repeat</button>
+            </div>
+
+
+            <div class="columns">
+                <div class="control">
+                    Seconds to show each sign for:
+                    <input id="timeBetweenSigns" class="column input is-primary is-one-desktop is-full-tablet"
+                        type="text" value="0.5" />
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="control">
+                    Answer:
+                    <input id="answerbox" class="column input is-primary is-one-desktop is-full-tablet" type="text"
+                        onkeyup="answerboxUpdated()" autocomplete="off" disabled />
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <img id="imageLetter" src="" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div id="warmup">
+        <!-- make sure the client has all the images -->
+        <div class="column">
+            <img id="imageA" src="fingerspelling/a.webp" />
+            <img id="imageB" src="fingerspelling/b.webp" />
+            <img id="imageC" src="fingerspelling/c.webp" />
+            <img id="imageD" src="fingerspelling/d.webp" />
+            <img id="imageE" src="fingerspelling/e.webp" />
+            <img id="imageF" src="fingerspelling/f.webp" />
+            <img id="imageG" src="fingerspelling/g.webp" />
+            <img id="imageH" src="fingerspelling/h.webp" />
+            <img id="imageI" src="fingerspelling/i.webp" />
+            <img id="imageJ" src="fingerspelling/j.webp" />
+            <img id="imageK" src="fingerspelling/k.webp" />
+            <img id="imageL" src="fingerspelling/l.webp" />
+            <img id="imageM" src="fingerspelling/m.webp" />
+            <img id="imageN" src="fingerspelling/n.webp" />
+            <img id="imageO" src="fingerspelling/o.webp" />
+            <img id="imageP" src="fingerspelling/p.webp" />
+            <img id="imageQ" src="fingerspelling/q.webp" />
+            <img id="imageR" src="fingerspelling/r.webp" />
+            <img id="imageS" src="fingerspelling/s.webp" />
+            <img id="imageT" src="fingerspelling/t.webp" />
+            <img id="imageU" src="fingerspelling/u.webp" />
+            <img id="imageV" src="fingerspelling/v.webp" />
+            <img id="imageW" src="fingerspelling/w.webp" />
+            <img id="imageX" src="fingerspelling/x.webp" />
+            <img id="imageY" src="fingerspelling/y.webp" />
+            <img id="imageZ" src="fingerspelling/z.webp" />
+        </div>
+    </div>
+</section>
+
+</html>

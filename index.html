@@ -2,66 +2,23 @@
 <html>
 
 <head>
-    <title>Random Word Generator</title>
+    <title>BSL helpers</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <script type="module" src="RandomWord.js"></script>
 </head>
 
 <body>
     <section class="section">
         <div class="container">
-            <div class="columns is-flex is-centered">
-                <div class="column is-full has-text-centered">
-                    <button class="button is-primary is-size-1 is-fullwidth"
-                        onclick="setRandomWord()">Randomise</button>
-                </div>
-            </div>
-            <div class="columns is-flex is-centered">
-                <div class="column is-full is-size-1 has-text-centered">
-                    <h1 id="word"></h1>
-                </div>
-            </div>
 
-            <div class="columns is-flex is-centered">
-                <div id="embed" class="column is-full has-text-centered">
-                    <video id="primary_video" class="is-hidden" type="video/mp4" controls></video>
-                </div>
-            </div>
+            <h1 class="title is-1">BSL tools:</h1>
 
-            <div class="columns is-flex is-centered">
-                <div id="embed" class="column is-full has-text-centered">
-                    <h2 id="secondary_word"></h2>
-                    <video id="secondary_video" class="is-hidden" type="video/mp4" controls></video>
-                </div>
-            </div>
+            <h2 class="title is-2"><a href="flashcards.html">Flashcards</a></h2>
 
-            <div class="columns is-flex is-centered">
-                <div class="column is-full is-size-2 has-text-centered">
-                    <a id="link" target="_blank">Click here for more videos</a>
-                </div>
-            </div>
-            <div class="columns is-flex is-centered">
-                <div class="column is-full is-size-4 has-text-centered">
-                    Current word count: <p id="count"></p>
-                </div>
-            </div>
-            <div class="columns is-flex is-centered">
-                <a id="link" target="_blank"
-                    href="https://github.com/programmingpixels/bsl-random-word/tree/main/wordlists">Click here to see
-                    the word lists</a>
-            </div>
+            <h2 class="title is-2"><a href="fingerspelling.html">Fingerspelling Game</a></h2>
+
         </div>
     </section>
-    <section>
-        <div class="container">
-            <div class="columns is-flex is-centered">
-                <div class="column is-full has-text-centered">
-                    <button class="button is-primary is-size-1 is-fullwidth"
-                        onclick="setRandomWord()">Randomise</button>
-                </div>
-            </div>
-        </div>
-    </section>
+
 </body>
 
 </html>
