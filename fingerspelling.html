@@ -10,41 +10,48 @@
 
 <section>
     <div class="container">
+
+        <h2 class="title is-2"><a href="flashcards.html">Go to Flashcards</a></h2>
+
         <div id="begin" class="columns is-flex is-centered">
-            <div class="column is-full has-text-centered">
-                <button class="button is-primary is-size-1 is-fullwidth" onclick="main()">Begin/ Start over</button>
+            <div class="column is-full has-text-centered is-fullwidth">
+                <button class="button is-primary is-size-1 " onclick="main()">Begin/ Start over</button>
             </div>
         </div>
 
-        <div id="gameControls" style="display:none;">
-            <div class="columns">
-                <button class="column button is-primary is-size-3 is-fullwidth"
-                    onclick="fingerspellWord()">Repeat</button>
+        <div id="gameControls" class="columns is-flex is-centered" style="display:none;">
+            <div class="columns is-fullwidth">
+                <button class="column button is-primary is-size-3 " onclick="fingerspellWord()">Repeat</button>
             </div>
+        </div>
 
 
-            <div class="columns">
+        <div class="columns is-flex is-centered">
+            <div class="column is-half-desktop is-full-tablet">
+
                 <div class="control">
                     Seconds to show each sign for:
-                    <input id="timeBetweenSigns" class="column input is-primary is-one-desktop is-full-tablet"
-                        type="text" value="0.5" />
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="control">
-                    Answer:
-                    <input id="answerbox" class="column input is-primary is-one-desktop is-full-tablet" type="text"
-                        onkeyup="answerboxUpdated()" autocomplete="off" disabled />
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="column">
-                    <img id="imageLetter" src="" />
+                    <input id="timeBetweenSigns" class="column input is-primary " type="text" value="0.5" />
                 </div>
             </div>
         </div>
+
+        <div class="columns is-flex is-centered">
+            <div class="column is-half-desktop is-full-tablet">
+                <div class="control">
+                    Answer:
+                    <input id="answerbox" class="column input is-primary " type="text" onkeyup="answerboxUpdated()"
+                        autocomplete="off" disabled />
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-flex is-centered">
+            <div class="column is-half-desktop is-full-tablet">
+                <img id="imageLetter" src="" />
+            </div>
+        </div>
+    </div>
 
     </div>
     </div>

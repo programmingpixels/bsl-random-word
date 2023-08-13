@@ -49,7 +49,7 @@ window.fingerspellWord = async function fingerspellWord() {
 window.answerboxUpdated = function answerboxUpdated() {
     // when the correct answer is input, generate a new word and show it
     console.log(answerboxEle.value)
-    if (answerboxEle.value === randomWord) {
+    if (answerboxEle.value.toLowerCase() === randomWord) {
         answerboxEle.value = "";
         setNewWord()
         fingerspellWord()
