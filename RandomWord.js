@@ -8,9 +8,13 @@ import { colours } from "./wordlists/colours.js";
 import { community } from "./wordlists/community.js";
 import { days } from "./wordlists/days.js";
 import { drinks } from "./wordlists/drinks.js";
+import { emotions } from "./wordlists/emotions.js";
+import { extras } from "./wordlists/extras.js";
 import { family } from "./wordlists/family.js";
 import { food } from "./wordlists/food.js";
 import { fruit } from "./wordlists/fruit.js";
+import { hobbies } from "./wordlists/hobbies.js";
+import { home } from "./wordlists/home.js";
 import { illness } from "./wordlists/illness.js";
 import { months } from "./wordlists/months.js";
 import { numbers } from "./wordlists/numbers.js";
@@ -32,9 +36,13 @@ const masterList = [
     ...community,
     ...days,
     ...drinks,
+    ...emotions,
+    ...extras,
     ...family,
     ...food,
     ...fruit,
+    ...hobbies,
+    ...home,
     ...illness,
     ...months,
     ...numbers,
@@ -91,7 +99,7 @@ function setVideo(word) {
         secondaryWordEle.textContent = secondaryWord;
 
     } else {
-        // no secondary word so hide it all
+        // TODO: try adding an S to make it plural?
         secondaryVideoEle.className = "is-hidden";
         secondaryWordEle.textContent = "";
     }

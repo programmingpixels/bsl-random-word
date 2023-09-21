@@ -1,6 +1,6 @@
 export const basics2 = [
     "Like",
-    "Like/Same",
+    "Same",
     "Don't like",
     "Love",
     "Know",
