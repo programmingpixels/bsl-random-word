@@ -44,6 +44,7 @@ window.fingerspellWord = async function fingerspellWord() {
 
     // reenable text box
     answerboxEle.disabled = false
+    answerboxEle.focus()
 }
 
 window.answerboxUpdated = function answerboxUpdated() {
