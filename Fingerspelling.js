@@ -34,7 +34,7 @@ window.fingerspellWord = async function fingerspellWord() {
     for (const letter of randomWord) {
         // blank out the image so that double letters are more obvious
         imgEle.src = ""
-        await sleep(75);
+        await sleep(50);
 
         imgEle.src = "fingerspelling/" + letter + ".webp"
         await sleep(timeBetweenSigns * 1000);
