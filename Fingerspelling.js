@@ -4,9 +4,7 @@ import { fingerspellingWordlist } from "./fingerspelling/wordlist.js";
 //https://stackoverflow.com/questions/49338193/how-to-use-code-from-script-with-type-module
 window.main = function main() {
     // hide all the letters
-    ['warmup'].forEach(id => {
-        document.getElementById(id).style.display = 'none';
-    });
+    document.getElementById('warmup').style.display = 'none';
 
     // show game controls
     const gameControlsEle = document.getElementById('gameControls');
@@ -38,7 +36,7 @@ window.fingerspellWord = async function fingerspellWord() {
         imgEle.src = ""
         await sleep(75);
 
-        document.getElementById('imageLetter').src = "fingerspelling/" + letter + ".webp"
+        imgEle.src = "fingerspelling/" + letter + ".webp"
         await sleep(timeBetweenSigns * 1000);
     }
 
