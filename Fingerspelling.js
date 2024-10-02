@@ -18,6 +18,8 @@ window.main = function main() {
 var randomWord = ""
 
 function setNewWord() {
+    answerboxEle.value = ""  // empty answer box
+
     favouriteLettersEle.value = favouriteLettersEle.value.toLowerCase().replace(/\s/g, "")
 
     const favouriteLetters = favouriteLettersEle.value
@@ -87,7 +89,6 @@ window.fingerspellWord = async function fingerspellWord() {
 window.answerboxUpdated = function answerboxUpdated() {
     // when the correct answer is input, generate a new word and show it
     if (answerboxEle.value.toLowerCase() === randomWord) {
-        answerboxEle.value = "";
         setNewWord()
         fingerspellWord()
     }
