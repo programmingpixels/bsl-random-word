@@ -15,7 +15,7 @@
 
         <div id="begin" class="columns is-flex is-centered">
             <div class="column is-full has-text-centered is-fullwidth">
-                <button class="button is-primary is-size-1 " onclick="main()">Begin/ Start over</button>
+                <button class="button is-primary is-size-1 " onclick="main()">Begin/ New word</button>
             </div>
         </div>
 
@@ -28,10 +28,18 @@
 
         <div class="columns is-flex is-centered">
             <div class="column is-half">
-
                 <div class="control">
                     Seconds to show each sign for:
                     <input id="timeBetweenSigns" class="column input is-primary " type="text" value="0.5" />
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-flex is-centered">
+            <div class="column is-half">
+                <div class="control">
+                    Letters you'd like included:
+                    <input id="favouriteLetters" class="column input is-primary " type="text" value="" />
                 </div>
             </div>
         </div>
@@ -85,6 +93,7 @@
             <img id="imageX" src="fingerspelling/x.webp" />
             <img id="imageY" src="fingerspelling/y.webp" />
             <img id="imageZ" src="fingerspelling/z.webp" />
+            <img id="imageFinishFlag" src="fingerspelling/finishflag.webp" />
         </div>
     </div>
 </section>
