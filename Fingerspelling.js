@@ -98,3 +98,10 @@ function sleep(ms) {
     // zzzzzzzzzzzzzzz
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+// repeat fingerspell if ENTER pressed
+document.addEventListener("keyup", function (event) {
+    if (event.key === 'Enter') {
+        fingerspellWord()
+    }
+});
