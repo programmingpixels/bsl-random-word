@@ -74,7 +74,7 @@ window.fingerspellWord = async function fingerspellWord() {
 
         // blank out the image so that double letters are more obvious
         imgEle.src = ""
-        await sleep(50);
+        await sleep(25);
     }
 
     // reenable text box
