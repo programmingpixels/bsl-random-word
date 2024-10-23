@@ -66,7 +66,7 @@ window.fingerspellWord = async function fingerspellWord() {
 
     // disable answer box
     answerboxEle.disabled = true
-    await sleep(50);
+    await sleep(100);
 
     for (const letter of randomWord) {
         imgEle.src = "fingerspelling/" + letter + ".webp"
@@ -74,7 +74,7 @@ window.fingerspellWord = async function fingerspellWord() {
 
         // blank out the image so that double letters are more obvious
         imgEle.src = ""
-        await sleep(25);
+        await sleep(30);
     }
 
     // reenable text box
